@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: rown;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.header__logo {
+    width: auto;
+    height: 100px;
+    margin: 25px;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.header__li a {
+    color: palevioletred;
+    padding: 10px;
+}
+
+.header__li a:hover {
+    color: white;
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: palevioletred;
+    width: auto;
+    color: whitesmoke;
+}
+
+.intro {
+    display: flex;
+   flex-direction: column;
+   margin: 0px 100px 100px 100px;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.intro__yo {
+    width: 700px;
+    height: 500px;
+    padding: 50px;
+}
+
+.intro__texto {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+.intro__texto__h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.intro__texto__p {
+    padding: 20px;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.one__icon {
+    height: 300px;
+    width: auto;
+    padding: 50px;
+}
+
+.one__p {
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: palevioletred;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.two {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.two__icon {
+    height: 300px;
+    width: auto;
+    padding: 50px;
+}
+
+.two__p {
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: palevioletred;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.three {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.three__icon {
+    height: 300px;
+    width: auto;
+    padding: 50px;
+}
+
+.three__p {
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: palevioletred;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.footer {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: palevioletred;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.footer__p {
+	margin: 20px;
+	padding: 20px;
+}
+
+.btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+
+}
+
+.btns__face {
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 30px;
+	border-color: white;
+	background-color: white
+	}
+
+.btns__insta {
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 30px;
+	border-color: white;
+	background-color: white;
+}
+
+.btns__twitter {
+	margin: 10px;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 30px;
+	border-color: white;
+	background-color: white;
+}
+
+/* Fin index */
+
+    .agenda {
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        padding: 50px;
+        background-color: palevioletred;
+        color: whitesmoke;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .agenda__h2 {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .calendario{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px;
+
+    }
+
+    .calendario__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 250px;
+        width: 250px;
+        background-color: palevioletred;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    .calendario__btn {
+        height: 35px;
+        width: 90px;
+        align-self: center;
+        margin: 25px 0px 0px 0px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        color: palevioletred;
+        font-size: 20px;
+    }
+
+    .calendario__btn:hover {
+        color: whitesmoke;
+        background-color: violet;
+    }
+/* Fin de agenda */
+
+.educate {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 50px;
+    background-color: palevioletred;
+    color: whitesmoke;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.educate__h2 {
+    padding: 0px 20px 20px 20px;
+}
+
+/* Fin de educate */
+
+.giftcards {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 50px;
+    background-color: palevioletred;
+    color: whitesmoke;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftcards__h2 {
+    padding: 0px 20px 20px 20px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px 20px 50px 20px;
+	padding: 30px;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: rgb(243, 112, 156);
+    background-color: palevioletred;
+}
+
+.card__h3 {
+	padding: 0px 10px 30px 10px;
+	color: whitesmoke;
+}
+
+.card__img {
+    height: 100px;
+}
+
+.card__p {
+	margin: 20px 0px;
+	color: whitesmoke;
+}
+
+.card__btn {
+	width: 70px;
+	height: 30px;
+	border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+/* Fin de giftcards */
+
+.contactame {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 50px;
+    background-color: palevioletred;
+    color: whitesmoke;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactame__h2 {
+    padding: 0px 20px 20px 20px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    color: palevioletred;
+    font-size: 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: palevioletred;
+    color: whitesmoke;
+}
+
+/* Fin de contactame */
+
+@media only screen and (max-width: 768px) {
+
+    body { max-width: 768px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .main {
+        max-width: 768px;
+    }
+
+    .calendario {
+        justify-content: space-between;
+        margin: 50px;
+        padding: 0;
+    }
+
+    .calendario__iframe{
+        height: 300px;
+        width: 400px;
+    }
+
+    .calendario__form {
+        height: 200px;
+        width: 150px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 768px;
+        height: auto;
+    }
+}
+
+/* Fin de media tablet */
+
+@media only screen and (max-width: 576px){
+
+    body {
+        max-width: 576px;
+    }
+    
+    .header {
+        max-width: 576px;
+        flex-direction: column;
+    }
+
+    .header__ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        max-width: 576px;
+    }
+
+    .main__section {
+        max-width: 576px;
+    }
+
+    .intro {
+        width: auto;
+        max-width: 576px;
+    }
+
+    .intro__yo {
+        max-width: 576px;
+        height: auto;
+    }
+    .intro__texto {
+        max-width: 576px;
+    }
+
+    .one{
+        max-width: 576px;
+        max-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .one__p {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .two{
+        max-width: 576px;
+        max-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .two__p {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .three{
+        max-width: 576px;
+        max-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .three__p {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .agenda{
+        width: 576px;
+        max-width: 576px;
+        margin: 50px 0px 0px 0px;
+        padding: 0%;
+        background-color: whitesmoke;
+        color: palevioletred;
+    }
+
+    .calendario {
+        max-width: 576px;
+        margin: 50px 50px 50px 50px;
+        padding: 0;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .calendario__iframe {
+        width: 300px;
+    }
+
+    .educate {
+        max-width: 576px;
+        margin: 0;
+        background-color: whitesmoke;
+        color: palevioletred;
+        border-radius: 0;
+    }
+    
+    .giftcards {
+        max-width: 576px;
+        margin: 0;
+        background-color: whitesmoke;
+        color: palevioletred;
+        border-radius: 0;
+    }
+
+    .cards {
+        max-width: 576px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contactame {
+        max-width: 576px;
+        margin: 0;
+        background-color: whitesmoke;
+        color: palevioletred;
+        border-radius: 0;
+    }
+}

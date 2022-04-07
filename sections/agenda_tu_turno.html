@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agenda tu turno</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/grid.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+<body>
+    <header class="header">
+        <img src="../img/logo-b.png" alt="logo" class="header__logo">
+        <nav>
+            <ul class="header__ul">
+                <li class="header__li"><a href="../index.html">Home</a></li>
+                <li class="header__li"><a href="./agenda_tu_turno.html">Agendá tu turno</a></li>
+                <li class="header__li"><a href="./giftcards.html">Giftcards</a></li>   
+                <li class="header__li"><a href="./educate.html">Educate</a></li>
+                <li class="header__li"><a href="./contactame.html">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__h1">MakeUp! By Cin Rodriguez</h1>
+        <section class="main__section">
+            <div class="agenda">
+                <h2 class="agenda__h2">Agendá tu turno</h2>
+                <p class="agenda__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi in porro reiciendis possimus officia architecto, libero molestias quisquam quis!</p>
+            </div>
+            <div class="calendario">
+                <iframe src="https://calendar.google.com/calendar/embed?src=ht70iu7olv6kt8smgka0jcehh8%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="600" height="600" frameborder="0" scrolling="no" class="calendario__iframe"></iframe>
+            <br><br><br>
+                <form class="calendario__form">
+                    Mes: <input type="number" name="mes" min="1" max="12">
+                    Día: <input type="number" name="dia" min="1" max="31">
+                    Hora: <input type="number" name="hora" min="9" max="21">
+                    Servicio: <select name="servicios">
+                                <option value="serv1">serv1</option>
+                                <option value="serv2">serv2</option>
+                                <option value="serv3">serv3</option>
+                                <option value="serv4">serv4</option>
+                            </select>
+                    <br>
+                    <button type="submit" class="calendario__btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Since 2021 - All rights reserved</p>
+        <div class="btns">
+            <button class="btns__face"><a href="https://www.facebook.com" target="blank">Facebook</a></button>
+            <button class="btns__insta"><a href="https://www.instagram.com" target="blank">Instagram</a></button>
+            <button class="btns__twitter"><a href="https://www.twitter.com" target="blank">Twitter</a></button>
+        </div>
+    </footer>
+</body>
+</html>

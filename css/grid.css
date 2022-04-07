@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:    "header  header  header  header  header  header"
+                            "h1      h1      h1      h1      h1      h1"
+                            "section section section section section section"
+                            "footer  footer  footer  footer  footer  footer"    
+}
+
+.header {
+    grid-area: header;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+
+.main {
+    grid-area: main;
+    grid-column: 1/-1;
+    grid-row: auto;
+}
+.main__h1 {
+    grid-area: h1;
+    grid-column-start: h1;
+    grid-column-end: h1;
+}
+
+.main__section {
+    grid-area: section;
+    grid-column-start: section;
+    grid-column-end: section;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column-start: footer;
+    grid-column-end: footer;
+}   
