@@ -75,8 +75,18 @@ h1 {
 .intro__yo {
     width: 700px;
     height: 500px;
-    padding: 50px;
-}
+    margin: 50px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px palevioletred;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .intro__yo:hover, .intro__yo:focus, .intro__yo:active {
+    box-shadow: 0 0 50px palevioletred;
+  }
 
 .intro__texto {
     padding: 50px;
@@ -220,6 +230,66 @@ h1 {
 	border-color: white;
 	background-color: white;
 }
+
+.hvr-shutter-out-horizontal {
+    margin: 10px;
+	padding: 10px;
+	border-radius: 30px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: white;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: palevioletred;
+    border: solid 2px;
+    border-color: white;
+    border-radius: 30px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: white;
+  }
+
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .btns__sm {
+      color: palevioletred;
+      font-size: 1.2rem;
+      font-weight: 1000;
+  }
+
+  .btns__sm:hover {
+      color: white;
+  }
+
+  
 
 /* Fin index */
 

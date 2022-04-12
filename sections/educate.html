@@ -11,7 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
     <header class="header">
@@ -29,7 +30,7 @@
     <main class="main">
         <h1 class="main__h1">MakeUp! By Cin Rodriguez</h1>
         <section class="main__section">
-            <div class="educate">
+            <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" class="educate">
                 <h2 class="educate__h2">Educate</h2>
                 <p class="educate__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse et temporibus repellat voluptatum iste impedit ab! Provident, modi. Totam, dolore.</p>
             </div>
@@ -76,10 +77,12 @@
     <footer class="footer">
         <p class="footer__p">Since 2021 - All rights reserved</p>
         <div class="btns">
-            <button class="btns__face"><a href="https://www.facebook.com" target="blank">Facebook</a></button>
-            <button class="btns__insta"><a href="https://www.instagram.com" target="blank">Instagram</a></button>
-            <button class="btns__twitter"><a href="https://www.twitter.com" target="blank">Twitter</a></button>
+            <button class="hvr-shutter-out-horizontal" class="btns__face"><a href="https://www.facebook.com" target="blank" class="btns__sm">Facebook</a></button>
+            <button class="hvr-shutter-out-horizontal" class="btns__insta"><a href="https://www.instagram.com" target="blank" class="btns__sm">Instagram</a></button>
+            <button class="hvr-shutter-out-horizontal" class="btns__twitter"><a href="https://www.twitter.com" target="blank" class="btns__sm">Twitter</a></button>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
