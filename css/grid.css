@@ -1,11 +1,11 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas:    "header  header  header  header  header  header"
-                            "h1      h1      h1      h1      h1      h1"
-                            "section section section section section section"
-                            "footer  footer  footer  footer  footer  footer"    
+    grid-template-areas:    "header  header  header"
+                            "h1      h1      h1    "
+                            "section section section"
+                            "footer  footer  footer"    
 }
 
 .header {
