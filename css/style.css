@@ -212,7 +212,7 @@ h1 {
 	border-style: solid;
 	border-radius: 30px;
 	border-color: white;
-	background-color: white
+	background-color: white;
 	}
 
 .btns__insta {
@@ -285,6 +285,7 @@ h1 {
       color: palevioletred;
       font-size: 1.2rem;
       font-weight: 1000;
+      text-decoration: none;
   }
 
   .btns__sm:hover {
@@ -550,6 +551,8 @@ h1 {
     .intro {
         width: auto;
         max-width: 576px;
+        margin: 0;
+        padding: 0;
     }
 
     .intro__yo {
@@ -558,6 +561,10 @@ h1 {
     }
     .intro__texto {
         max-width: 576px;
+        margin: 0px 0px 50px 0px;
+        padding: 10px;
+        border-radius: 0px;
+
     }
 
     .one{
