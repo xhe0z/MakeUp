@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+}
+
+.header {
+    height: auto;
+    width: 100vw;
+
+    & &__logo {
+        width: auto;
+        height: 100px;
+        margin: 25px;
+    }
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: palevioletred;
+    width: auto;
+    color: whitesmoke;
+    width: 100vw;
+}
+
+.educate {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 50px;
+    background-color: palevioletred;
+    color: whitesmoke;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+    & &__h2 {
+        padding: 0px 20px 20px 20px;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 50px 20px;
+    padding: 30px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(243, 112, 156);
+    background-color: palevioletred;
+
+    & &__h3 {
+        padding: 0px 10px 30px 10px;
+        color: white;
+    }
+
+    & &__img {
+        height: 100px;
+    }
+
+    & &__p {
+        margin: 20px 0px;
+        color: whitesmoke;
+    }
+
+    & &__btn {
+        width: 70px;
+        height: 30px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+    }
+}
+
+.footer {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: palevioletred;
+    color: antiquewhite;
+    font-size: 20px;
+
+    & &__p {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+.btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+    
+    & &__face {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+        }
+    
+    & &__insta {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+    }
+    
+    & &__twitter {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+    }
+
+    &__sm {
+        color: palevioletred;
+        font-size: 1.2rem;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+  
+    & &__sm:hover {
+        color: white;
+    }
+}
+
+.hvr-shutter-out-horizontal {
+    margin: 10px;
+	padding: 10px;
+	border-radius: 30px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background-color: white;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: palevioletred;
+        border: solid 2px;
+        border-color: white;
+        border-radius: 30px;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover, &:focus, &:active {
+        color: white;
+    }
+    
+    &:hover:before, &:focus:before, &:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
