@@ -12,6 +12,7 @@
 body {
     background-color: whitesmoke;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
@@ -44,6 +45,7 @@ body {
 .header__li a {
     color: palevioletred;
     padding: 10px;
+    text-decoration: none;
 }
 
 .header__li a:hover {
@@ -185,6 +187,7 @@ h1 {
 .footer {
 	display: flex;
 	height: auto;
+    width: 100vw;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
