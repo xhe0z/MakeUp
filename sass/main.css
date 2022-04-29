@@ -14,7 +14,7 @@ body {
   width: 100vw;
 }
 
-.header {
+.header, .header .header__dark {
   height: auto;
   width: 100vw;
 }
@@ -23,6 +23,39 @@ body {
   width: auto;
   height: 100px;
   margin: 25px;
+}
+
+.header .header__dark {
+  background-color: black;
+}
+
+.header .header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.header .header__li a {
+  color: palevioletred;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header .header__li a:hover {
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -151,36 +184,35 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  /*& &__face {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+    }
+    
+    & &__insta {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+    }
+    
+    & &__twitter {
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+        border-radius: 30px;
+        border-color: white;
+        background-color: white;
+    }*/
 }
 
-.btns .btns__face {
-  margin: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-radius: 30px;
-  border-color: white;
-  background-color: white;
-}
-
-.btns .btns__insta {
-  margin: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-radius: 30px;
-  border-color: white;
-  background-color: white;
-}
-
-.btns .btns__twitter {
-  margin: 10px;
-  padding: 10px;
-  border-style: solid;
-  border-radius: 30px;
-  border-color: white;
-  background-color: white;
-}
-
-.btns__sm {
+.btns .btns__sm {
   color: palevioletred;
   font-size: 1.2rem;
   font-weight: 1000;
@@ -241,5 +273,32 @@ h1 {
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.btns__face {
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: white;
+  background-color: white;
+}
+
+.btns__insta {
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: white;
+  background-color: white;
+}
+
+.btns__twitter {
+  margin: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: white;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
