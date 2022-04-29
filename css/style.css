@@ -13,6 +13,7 @@ body {
     background-color: whitesmoke;
     width: 100vw;
     overflow-x: hidden;
+    background-image: linear-gradient(to top, rgba(255, 154, 158, 0.75) 0%, rgba(254, 207, 239, 0.75) 99%, rgba(254, 207, 239, 0.75) 100%);
 }
 
 .header {
@@ -64,16 +65,17 @@ h1 {
     width: auto;
     color: whitesmoke;
     width: 100vw;
+    margin: 0px;
 }
 
 .intro {
     display: flex;
-   flex-direction: column;
-   margin: 0px 100px 100px 100px;
-   justify-content: center;
-   align-items: center;
-
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/img/pexels-shiny-diamond-3373744.jpg);
+    background-size: cover;
+    width: 100vw;
 }
 
 .intro__yo {
@@ -87,20 +89,27 @@ h1 {
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
-  }
-  .intro__yo:hover, .intro__yo:focus, .intro__yo:active {
+}
+
+.intro__yo:hover, .intro__yo:focus, .intro__yo:active {
     box-shadow: 0 0 50px palevioletred;
-  }
+}
 
 .intro__texto {
     padding: 50px;
     justify-content: center;
     align-items: center;
-    background-color: palevioletred;
-    color: whitesmoke;
-    font-size: 20px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    /* background-image: linear-gradient(to top, #ff9a9d83 0%, #fecfef83 99%, #fecfef83 100%); */
+    background-image: linear-gradient(to top, rgba(255, 154, 158, 0.75) 0%, rgba(254, 207, 239, 0.75) 99%, rgba(254, 207, 239, 0.75) 100%);
+    font-size: 25px;
+    font-weight: bolder;
     text-align: center;
-    border-radius: 10px;
+    color: rgb(207, 93, 131);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(150px);
+    border: 1px 0px 0px 0pxsolid rgba(255, 255, 255, 0.5);
 }
 
 .intro__texto__h2 {
@@ -109,10 +118,31 @@ h1 {
     align-items: center;
     padding: 20px;
     font-size: 40px;
+    color: rgb(207, 93, 131);
 }
 
 .intro__texto__p {
     padding: 20px;
+}
+
+.container-fluid {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+#carouselExampleIndicators {
+    margin: 100px 0px;
+    padding: 0;
+    width: 100vw;
+}
+
+.contenedor__one {
+    display: flex;
+    background-image: url(../img/img/pexels-kinkate-208052.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
 }
 
 .one {
