@@ -99,8 +99,6 @@ h1 {
     padding: 50px;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.6); */
-    /* background-image: linear-gradient(to top, #ff9a9d83 0%, #fecfef83 99%, #fecfef83 100%); */
     background-image: linear-gradient(to top, rgba(255, 154, 158, 0.75) 0%, rgba(254, 207, 239, 0.75) 99%, rgba(254, 207, 239, 0.75) 100%);
     font-size: 25px;
     font-weight: bolder;
@@ -151,6 +149,12 @@ h1 {
     margin: 50px;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .one__icon {
@@ -160,12 +164,12 @@ h1 {
 }
 
 .one__p {
-    font-size: 20px;
-    color: whitesmoke;
-    background-color: palevioletred;
+    font-size: 30px;
+    font-weight: bolder;
+    color: palevioletred;
     margin: 50px;
     padding: 50px;
-    border-radius: 10px;
+    text-align: center;
 }
 
 .two {
