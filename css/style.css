@@ -7,10 +7,14 @@
     outline: none;
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
-}
+}    
 
 html {
     width: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -78,7 +82,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../img/img/pexels-shiny-diamond-3373744.jpg); */
     background-size: cover;
     width: 100vw;
 }
@@ -98,18 +101,18 @@ h1 {
 }
 
 .intro__texto {
-    padding: 40px;
+    margin: 0;
+    padding: 50px;
     width: 100vw;
     justify-content: center;
     align-items: center;
     font-size: 25px;
     font-weight: bolder;
     text-align: center;
-    /* color: rgb(207, 93, 131); */
     color: white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border: 1px 0px 0px 0pxsolid rgba(255, 255, 255, 0.5);
     z-index: 2;
     position: absolute;
@@ -121,12 +124,11 @@ h1 {
     align-items: center;
     padding: 20px;
     font-size: 40px;
-    /* color: rgb(207, 93, 131); */
     color: white;
 }
 
 .intro__texto__p {
-    padding: 20px;
+    width: 100vw;
 }
 
 .intro__yo {
