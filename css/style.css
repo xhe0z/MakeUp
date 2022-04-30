@@ -124,11 +124,16 @@ h1 {
     align-items: center;
     padding: 20px;
     font-size: 40px;
-    color: white;
+    color: palevioletred;
 }
 
 .intro__texto__p {
     width: 100vw;
+}
+
+.intro__texto__p2 {
+    color: palevioletred;
+    font-size: 30px;
 }
 
 .intro__yo {
