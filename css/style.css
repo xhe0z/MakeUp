@@ -153,7 +153,9 @@ h1 {
 }
 
 .yo__h3 {
-
+    font-size: 40px;
+    font-weight: bolder;
+    color: palevioletred;
 }
 
 .yo__img {
@@ -172,9 +174,145 @@ h1 {
     box-shadow: 0 0 150px rgb(255, 0, 221);
 }
 
+.yo__redes {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
 .yo__icon {
-    width: 50px;
+    width: 100px;
     height: auto;
+
+}
+
+.yo__facebook {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e100;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.yo__facebook:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3b5998;
+    border-radius: 16px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.yo__facebook:hover, .yo__facebook:focus, .yo__facebook:active {
+    color: white;
+}
+
+.yo__facebook:hover:before, .yo__facebook:focus:before, .yo__facebook:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.yo__instagram {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e100;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.yo__instagram:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 107% , #fdf497 0%, #fdf947 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 25px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.yo__instagram:hover, .yo__instagram:focus, .yo__instagram:active {
+    color: white;
+}
+
+.yo__instagram:hover:before, .yo__instagram:focus:before, .yo__instagram:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.yo__whatsapp {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e100;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.yo__whatsapp:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #43d854;
+    box-shadow: 0 0 10px 5px #43d854;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.yo__whatsapp:hover, .yo__whatsapp:focus, .yo__whatsapp:active {
+    color: white;
+}
+
+.yo__whatsapp:hover:before, .yo__whatsapp:focus:before, .yo__whatsapp:active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .container-fluid {
@@ -195,6 +333,7 @@ h1 {
     background-size: cover;
     width: 100vw;
     height: 500px;
+    margin-bottom: 100px;
 }
 
 .one {
@@ -226,12 +365,27 @@ h1 {
     text-align: center;
 }
 
+.contenedor__two {
+    display: flex;
+    background-image: url(../img/img/pexels-kinkate-211342.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
 .two {
     display: flex;
     flex-direction: row-reverse;
     margin: 50px;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .two__icon {
@@ -241,12 +395,21 @@ h1 {
 }
 
 .two__p {
-    font-size: 20px;
-    color: whitesmoke;
-    background-color: palevioletred;
+    font-size: 30px;
+    font-weight: bolder;
+    color: palevioletred;
     margin: 50px;
     padding: 50px;
-    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor__three {
+    display: flex;
+    background-image: url(../img/img/pexels-suzy-hazelwood-1327689.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 100px;
 }
 
 .three {
@@ -255,6 +418,12 @@ h1 {
     margin: 50px;
     justify-content: center;
     align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .three__icon {
@@ -264,13 +433,53 @@ h1 {
 }
 
 .three__p {
-    font-size: 20px;
-    color: whitesmoke;
-    background-color: palevioletred;
+    font-size: 30px;
+    font-weight: bolder;
+    color: palevioletred;
     margin: 50px;
     padding: 50px;
-    border-radius: 10px;
+    text-align: center;
 }
+
+.contenedor__four {
+    display: flex;
+    background-image: url(../img/img/pexels-dan-cristian-pădureț-1377034.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.four {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.four__icon {
+    height: 300px;
+    width: auto;
+    padding: 50px;
+}
+
+.four__p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: palevioletred;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+
 
 .footer {
 	display: flex;
