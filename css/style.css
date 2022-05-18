@@ -9,10 +9,6 @@
     font-family: 'Montserrat', sans-serif;
 }    
 
-html {
-    width: auto;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -118,7 +114,7 @@ h1 {
     -webkit-backdrop-filter: blur(30px);
     border: 1px 0px 0px 0pxsolid rgba(255, 255, 255, 0.5);
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .intro__texto__h2 {
@@ -127,15 +123,17 @@ h1 {
     align-items: center;
     padding: 20px;
     font-size: 40px;
-    color: palevioletred;
+    color: white;
 }
 
 .intro__texto__p {
-    width: 100vw;
+    color: palevioletred;
+    font-size: 24px;
+
 }
 
 .intro__texto__p2 {
-    color: palevioletred;
+    color: white;
     font-size: 30px;
 }
 
@@ -143,8 +141,10 @@ h1 {
     background-image: url(../img/img/pexels-shiny-diamond-3373744.jpg);
     background-size: cover;
     width: 100vw;
-    height: 1000px;
-    margin: 100px;
+    height: auto;
+    margin: 100px 100px 0px 100px;
+    padding: 100px;
+    gap: 100px;
     box-shadow: 0 0 100px white;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ h1 {
 .yo__h3 {
     font-size: 40px;
     font-weight: bolder;
-    color: palevioletred;
+    color: white;
 }
 
 .yo__img {
@@ -315,16 +315,22 @@ h1 {
     transform: scale(1);
 }
 
-.container-fluid {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+.servicios {
+    width: auto;
+    height: auto;
+    margin: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
-#carouselExampleIndicators {
-    margin: 100px 0px;
-    padding: 0;
-    width: 100vw;
+.servicios__container {
+    display: flex;
+
 }
 
 .contenedor__one {
