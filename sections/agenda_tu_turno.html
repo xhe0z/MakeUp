@@ -34,22 +34,24 @@
     <main class="main">
         <h1 class="main__h1">MakeUp! By Cin Rodriguez</h1>
         <section class="main__section">
-            <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" class="agenda">
-                <h2 class="agenda__h2">Agendá tu turno</h2>
-                <p class="agenda__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi in porro reiciendis possimus officia architecto, libero molestias quisquam quis!</p>
+            <div class="agenda">
+                <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" class="agenda__container">
+                    <h2 class="agenda__h2">Agendá tu turno</h2>
+                    <p class="agenda__p">Aquí podras completar el formulario para agendar la fecha y la hora del servicio que estabas buscando. <br><br> Ten en cuenta que el servicio de "prueba de maquillaje" sólo esta disponible conjuntamente con el de "maquillaje de boda" si es que lo prefieres (se factura de forma independiente y no está contemplado en el precio de "maquillaje de boda").</p>
+                </div>
             </div>
             <div class="calendario">
                 <iframe src="https://calendar.google.com/calendar/embed?src=ht70iu7olv6kt8smgka0jcehh8%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="600" height="600" frameborder="0" scrolling="no" class="calendario__iframe"></iframe>
             <br><br><br>
                 <form class="calendario__form">
-                    Mes: <input type="number" name="mes" min="1" max="12">
-                    Día: <input type="number" name="dia" min="1" max="31">
+                    Mes: <input type="date" name="mes">
                     Hora: <input type="number" name="hora" min="9" max="21">
                     Servicio: <select name="servicios">
-                                <option value="serv1">serv1</option>
-                                <option value="serv2">serv2</option>
-                                <option value="serv3">serv3</option>
-                                <option value="serv4">serv4</option>
+                                <option value="1">Maquillaje de día/noche</option>
+                                <option value="2">Maquillaje de boda</option>
+                                <option value="3">Laminado de cejas</option>
+                                <option value="4">Lifting de pestañas</option>
+                                <option value="5">Limpieza de cutis</option>
                             </select>
                     <br>
                     <button type="submit" class="calendario__btn">Enviar</button>
