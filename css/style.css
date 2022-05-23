@@ -825,20 +825,42 @@ h1 {
 
 /* Fin de educate */
 
-.giftcards {
+.tienda {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 100px;
-    padding: 50px;
-    background-color: palevioletred;
-    color: whitesmoke;
-    border-radius: 20px;
+    padding: 50px 0px;
+    background-image: url(../img/img/pexels-dan-cristian-pădureț-1377034.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.tienda__container {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border: 1px 0px 0px 0px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.giftcards__h2 {
-    padding: 0px 20px 20px 20px;
+.tienda__h2 {
+    padding: 20px 0px;
+    font-weight: bolder;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.tienda__p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
 .cards {
