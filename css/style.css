@@ -807,21 +807,65 @@ h1 {
     }
 /* Fin de agenda */
 
-.educate {
+.galeriaa {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 100px;
-    padding: 50px;
-    background-color: palevioletred;
-    color: whitesmoke;
-    border-radius: 20px;
+    padding: 50px 0px;
+    background-image: url(../img/img/pexels-dan-cristian-pădureț-1377034.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.galeria__container {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border: 1px 0px 0px 0px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.educate__h2 {
-    padding: 0px 20px 20px 20px;
+.galeria__h2 {
+    padding: 20px 0px;
+    font-weight: bolder;
+    font-size: 35px;
+    text-decoration: underline;
 }
+
+.galeria__p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.row, .column, .galeria__img {
+    box-sizing: border-box;
+}
+
+.galeria__img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33%;
+    padding: 5px;
+}
+
+
 
 /* Fin de educate */
 
@@ -874,15 +918,19 @@ h1 {
 	align-items: center;
 	margin: 0px 20px 50px 20px;
 	padding: 30px;
+    width: 20vw;
+    height: auto;
 	border-style: solid;
 	border-radius: 15px;
-	border-color: rgb(243, 112, 156);
-    background-color: palevioletred;
+	border-color: white;
+    background-color: rgba(204, 33, 195, 0.6);
 }
 
 .card__h3 {
 	padding: 0px 10px 30px 10px;
 	color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .card__img {
@@ -892,13 +940,16 @@ h1 {
 .card__p {
 	margin: 20px 0px;
 	color: whitesmoke;
+    text-align: center;
 }
 
 .card__btn {
-	width: 70px;
+	width: 80px;
 	height: 30px;
-	border-radius: 20px;
-    background-color: whitesmoke;
+	border-radius: 10px;
+    background-color: white;
+    color: #d6249f;
+
 }
 
 /* Fin de giftcards */
