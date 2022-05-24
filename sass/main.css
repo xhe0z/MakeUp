@@ -1398,6 +1398,9 @@ h1 {
     text-align: center;
     padding: 0;
   }
+  .yo__container {
+    margin-top: 50px;
+  }
   .yo__img {
     max-width: 100vw;
     height: auto;
@@ -1572,6 +1575,9 @@ h1 {
             align-items: center;
     text-align: center;
     padding: 0;
+  }
+  .yo__container {
+    margin-top: 50px;
   }
   .yo__img {
     max-width: 100vw;
